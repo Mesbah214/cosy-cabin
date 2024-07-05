@@ -1,0 +1,199 @@
+:root {
+    --primary: hsla(0, 0%, 98%, 1);
+    --secondary: hsla(174, 36%, 16%, 1);
+    --accent: hsla(115, 100%, 71%, 1);
+    --button: rgba(255, 255, 255, 0.205);
+    /* --text: hsla(174, 36%, 16%, 1); */
+}
+
+@font-face {
+    font-family: Boska;
+    font-weight: 400;
+    src: url("./fonts/Boska-Regular.woff2") format("woff2"),
+        url("./fonts/Boska-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: Boska;
+    font-weight: 500;
+    src: url("./fonts/Boska-Medium.woff2") format("woff2"),
+        url("./fonts/Boska-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: Boska;
+    font-weight: 700;
+    src: url("./fonts/Boska-Bold.woff2") format("woff2"),
+        url("./fonts/Boska-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: Boska-Italic;
+    font-weight: 400;
+    src: url("./fonts/Boska-Italic.woff2") format("woff2"),
+        url("./fonts/Boska-Italic.woff") format("woff");
+}
+
+@font-face {
+    font-family: Switzer;
+    font-weight: 400;
+    src: url("./fonts/Switzer-Regular.woff2") format("woff2"),
+        url("./fonts/Switzer-Regular.woff") format("woff");
+}
+
+/******************
+* Resets
+******************/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Switzer", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    display: none;
+}
+
+/******************
+* Hero Section
+******************/
+
+.hero {
+    background-image: url("./img/pattern.png");
+    /* background-blend-mode: lighten; */
+    background-color: var(--secondary);
+    padding-block-start: 16rem;
+    padding-block-end: 17rem;
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero__text {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    /* display: none; */
+}
+
+.hero__text span {
+    display: block;
+}
+
+.hero__text {
+    font-family: "Boska", serif;
+    font-size: 26.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 0.8;
+    color: white;
+}
+
+.hero__text .ln2 {
+    font-family: "Boska-Italic", serif;
+    color: var(--accent);
+    margin-inline-start: 415px;
+}
+
+.hero__text .ln3 {
+    position: relative;
+}
+
+.hero__text .ln4 {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    font-size: 3.2rem;
+    font-weight: 700;
+    transform: translateX(-50%);
+}
+
+.hero p {
+    text-align: center;
+    color: white;
+    width: 57rem;
+    margin: auto;
+    margin-block-start: 5rem;
+}
+
+picture {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero__line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 118.9rem;
+    width: 90%;
+}
+
+.hero__button {
+    padding: 3.1rem;
+    background-color: var(--accent);
+    border-radius: 50%;
+    border: 0;
+    outline: 1.2rem solid var(--button);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(40%, -50%);
+}
+
+.hero__button:focus-visible {
+    outline-color: dashed var(--accent);
+}
