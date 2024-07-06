@@ -3,42 +3,38 @@
     --secondary: hsla(174, 36%, 16%, 1);
     --accent: hsla(115, 100%, 71%, 1);
     --button: rgba(255, 255, 255, 0.205);
+    --secondary-text: hsla(174, 13%, 47%, 1);
     /* --text: hsla(174, 36%, 16%, 1); */
 }
 
 @font-face {
     font-family: Boska;
     font-weight: 400;
-    src: url("./fonts/Boska-Regular.woff2") format("woff2"),
-        url("./fonts/Boska-Regular.woff") format("woff");
+    src: url("./fonts/Boska-Regular.woff2") format("woff2"), url("./fonts/Boska-Regular.woff") format("woff");
 }
 
 @font-face {
     font-family: Boska;
     font-weight: 500;
-    src: url("./fonts/Boska-Medium.woff2") format("woff2"),
-        url("./fonts/Boska-Medium.woff") format("woff");
+    src: url("./fonts/Boska-Medium.woff2") format("woff2"), url("./fonts/Boska-Medium.woff") format("woff");
 }
 
 @font-face {
     font-family: Boska;
     font-weight: 700;
-    src: url("./fonts/Boska-Bold.woff2") format("woff2"),
-        url("./fonts/Boska-Bold.woff") format("woff");
+    src: url("./fonts/Boska-Bold.woff2") format("woff2"), url("./fonts/Boska-Bold.woff") format("woff");
 }
 
 @font-face {
     font-family: Boska-Italic;
     font-weight: 400;
-    src: url("./fonts/Boska-Italic.woff2") format("woff2"),
-        url("./fonts/Boska-Italic.woff") format("woff");
+    src: url("./fonts/Boska-Italic.woff2") format("woff2"), url("./fonts/Boska-Italic.woff") format("woff");
 }
 
 @font-face {
     font-family: Switzer;
     font-weight: 400;
-    src: url("./fonts/Switzer-Regular.woff2") format("woff2"),
-        url("./fonts/Switzer-Regular.woff") format("woff");
+    src: url("./fonts/Switzer-Regular.woff2") format("woff2"), url("./fonts/Switzer-Regular.woff") format("woff");
 }
 
 /******************
@@ -51,9 +47,7 @@ html {
 }
 
 body {
-    font-family: "Switzer", system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-        "Helvetica Neue", sans-serif;
+    font-family: "Switzer", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: normal;
@@ -112,12 +106,10 @@ h6 {
 
 .hero {
     background-image: url("./img/pattern.png");
-    /* background-blend-mode: lighten; */
     background-color: var(--secondary);
     padding-block-start: 16rem;
     padding-block-end: 17rem;
     position: relative;
-    min-height: 100vh;
 }
 
 .hero__text {
@@ -237,7 +229,7 @@ picture {
 }
 
 .info__numbers span {
-    font-family: 'Boska', serif;
+    font-family: "Boska", serif;
     font-size: 10rem;
     font-weight: 700;
     line-height: 1;
@@ -248,3 +240,78 @@ picture {
     margin-block-end: 10.8rem;
 }
 
+/******************
+* About-us section
+******************/
+
+.about-us {
+    background-image: url("./img/pattern.png");
+    background-color: var(--secondary);
+    color: white;
+}
+
+.about-us-container {
+    padding-block-start: 23.3rem;
+    padding-block-end: 44.3rem;
+    max-width: 140rem;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.about-us h2,
+p {
+    position: relative;
+    z-index: 100;
+}
+
+.about-us h2 {
+    color: var(--accent);
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-us p {
+    font-family: "Boska", serif;
+    font-size: 6.8rem;
+    color: var(--secondary-text);
+    text-transform: capitalize;
+    max-width: 108.4rem;
+    margin: auto;
+    text-align: center;
+    margin-block-start: 3rem;
+}
+
+.about-us span {
+    color: white;
+}
+
+.about-us img {
+    position: absolute;
+}
+
+.about-us svg {
+    width: 100%;
+}
+
+#pic-1 {
+    top: 85px;
+    right: 20px;
+}
+
+#pic-2 {
+    top: 323px;
+    left: 0;
+}
+
+#pic-4 {
+    bottom: 134px;
+    right: 86px;
+}
+
+#pic-3 {
+    bottom: 146px;
+    left: 69px;
+}
