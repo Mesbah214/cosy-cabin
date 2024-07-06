@@ -57,6 +57,7 @@ body {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: normal;
+    color: var(--secondary);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -197,3 +198,53 @@ picture {
 .hero__button:focus-visible {
     outline-color: dashed var(--accent);
 }
+
+/******************
+* Info Section
+******************/
+
+.info {
+    background-color: var(--primary);
+    padding-block-start: 11.9rem;
+    padding-block-end: 11.7rem;
+}
+
+.container {
+    max-width: 114rem;
+    width: 90%;
+    margin: auto;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__details {
+    flex-basis: 40%;
+}
+
+.info__numbers {
+    flex-basis: 40%;
+}
+
+.info__text {
+    margin-block-start: 4.2rem;
+}
+
+.info__numbers p {
+    font-size: 2.4rem;
+}
+
+.info__numbers span {
+    font-family: 'Boska', serif;
+    font-size: 10rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--secondary);
+}
+
+.info__number:not(:last-child) {
+    margin-block-end: 10.8rem;
+}
+
