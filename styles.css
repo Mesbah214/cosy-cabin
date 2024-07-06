@@ -1,5 +1,6 @@
 :root {
-    --primary: hsla(0, 0%, 98%, 1);
+    /* --primary: hsla(0, 0%, 98%, 1); */
+    --primary: #f9f9f9;
     --secondary: hsla(174, 36%, 16%, 1);
     --accent: hsla(115, 100%, 71%, 1);
     --button: rgba(255, 255, 255, 0.205);
@@ -314,4 +315,75 @@ p {
 #pic-3 {
     bottom: 146px;
     left: 69px;
+}
+
+/******************
+* Unique-rooms section
+******************/
+
+.unique-rooms {
+    background-color: var(--primary);
+    padding-block-start: 20rem;
+    padding-block-end: 18.4rem;
+    padding-inline: 5px;
+    margin-block-start: -2px;
+}
+
+.unique-rooms-container {
+    margin-block-end: 14.8rem;
+}
+
+.unique-rooms h2 {
+    font-family: 'Boska', serif;
+    font-weight: 400;
+    font-size: 6.8rem;
+    max-width: 78.4rem;
+    text-transform: capitalize;
+}
+
+.card__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    margin-inline: 15px;
+}
+
+.card img {
+    height: auto;
+}
+
+.card__body {
+    position: absolute;
+    left: 46px;
+    bottom: 60px;
+    display: flex;
+}
+
+.card__body svg {
+    margin-block-start: 2.4rem;
+}
+
+.card__text {
+    color: white;
+}
+
+.card__text h3 {
+    font-family: 'Boska', serif;
+    font-weight: 400;
+    font-size: 3.2rem;
+    text-transform: capitalize;
+}
+
+.card__text p {
+    max-width: 38rem;
+    margin-block-start: 1.6rem;
+    margin-block-end: 4rem;
+}
+
+.card.active h3 {
+    font-size: 6.8rem;
 }
