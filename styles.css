@@ -70,6 +70,7 @@ body {
     line-height: normal;
     color: var(--secondary);
     -webkit-font-smoothing: antialiased;
+    /* position: relative; */
 }
 
 *,
@@ -115,6 +116,51 @@ h6 {
     height: 1px;
     width: 1px;
     display: none;
+}
+
+/******************
+* Header Section
+******************/
+.header {
+    padding-block: 3.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.active-scroll {
+    background-image: url("./img/pattern.png");
+    background-color: var(--secondary);
+    position: fixed;
+    padding-block-start: 2rem;
+    padding-block-end: .8rem;
+    z-index: 1000;
+}
+
+.main-nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.link-holder {
+    display: inherit;
+    gap: 5.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: var(--accent);
 }
 
 /******************
