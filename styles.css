@@ -45,6 +45,16 @@
 }
 
 /******************
+* Typography
+******************/
+.section-title {
+    font-family: "Boska", serif;
+    font-size: 6.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/******************
 * Resets
 ******************/
 
@@ -245,6 +255,13 @@ picture {
 
 .info__number:not(:last-child) {
     margin-block-end: 10.8rem;
+}
+
+/******************
+* Image section
+******************/
+.image img {
+    width: 100%;
 }
 
 /******************
@@ -570,6 +587,74 @@ p {
     transition: color 0.8s cubic-bezier(0.87, 0, 0.13, 1);
 }
 
- .testimonial .controls button:hover .control {
+.testimonial .controls button:hover .control {
     color: black;
+}
+
+/**********************
+* Footer section
+***********************/
+
+.intro {
+    background-color: white;
+    padding-block-start: 7.8rem;
+    padding-block-end: 11.1rem;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro__text h3 {
+    font-family: "Boska", serif;
+    font-size: 6.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    max-width: 71.1rem;
+}
+
+.intro__text a {
+    display: inline-block;
+    margin-block-start: 7.6rem;
+    text-decoration: none;
+    padding-inline: 6rem;
+    padding-block: 2rem;
+    border: 1px solid var(--secondary-text);
+}
+
+.link__container {
+    display: flex;
+}
+
+.link {
+    position: relative;
+    flex: 1;
+    display: inherit;
+    justify-content: center;
+    background-image: url("./img/pattern.png");
+    background-color: var(--secondary);
+    text-decoration: none;
+    color: white;
+    padding-block: 12.8rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.link svg {
+    position: absolute;
+    top: 55%;
+    right: 26%;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+    background-color: var(--accent);
+    color: black;
+}
+
+.link:hover svg {
+    top: 80%;
+    right: 20px;
 }
