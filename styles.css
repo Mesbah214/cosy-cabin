@@ -241,17 +241,42 @@ picture {
     transform: translateX(-50%);
     max-width: 118.9rem;
     width: 90%;
+    z-index: 5;
 }
 
 .hero__button {
-    padding: 3.1rem;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--accent);
     border-radius: 50%;
-    border: 0;
+    border: none;
     position: absolute;
     top: 50%;
     right: 0;
     transform: translate(40%, -50%);
+    z-index: 10;
+}
+
+.backdrop {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 52%;
+    scale: 1.6;
+    right: 0;
+    transform: translate(25%, -50%);
+    opacity: 0.2;
+}
+
+.hero__button img {
+    margin-inline-start: 6px;
+    margin-block-start: 2px;
+    scale: 1.2;
 }
 
 .hero__button:focus-visible {
