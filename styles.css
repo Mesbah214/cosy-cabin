@@ -135,7 +135,7 @@ h6 {
     background-color: var(--secondary);
     position: fixed;
     padding-block-start: 2rem;
-    padding-block-end: .8rem;
+    padding-block-end: 0.8rem;
     z-index: 1000;
 }
 
@@ -152,15 +152,15 @@ h6 {
 
 .main-nav-link:link,
 .main-nav-link:visited {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  transition: all 0.2s ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in-out;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 /******************
@@ -550,6 +550,7 @@ p {
     background-color: var(--primary);
     padding-block-start: 7rem;
     padding-block-end: 7.8rem;
+    overflow-x: hidden;
 }
 
 .testimonial-container {
@@ -562,6 +563,7 @@ p {
 
 .testimonial .card__container {
     display: flex;
+    justify-content: center;
 }
 
 .testimonial h2 {
@@ -578,12 +580,18 @@ p {
 
 .testimonial .card__container {
     margin-block-start: 17.2rem;
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 .testimonial .card {
     position: relative;
-    flex-basis: 30%;
+    flex-basis: 33.33%;
+    /* background-color: green; */
+    margin-inline: 20px;
+}
+
+.testimonial img {
+    margin-left: auto;
 }
 
 .testimonial .card h3 {
@@ -599,7 +607,18 @@ p {
     padding-inline-end: 2.7rem;
     position: absolute;
     bottom: 10px;
-    left: 30px;
+    right: 30px;
+}
+
+.testimonial .card__body::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), white 85.53%);
+    top: 0;
+    right: 0;
+    z-index: 100;
 }
 
 .testimonial .controls {
@@ -621,7 +640,7 @@ p {
     margin-inline: 1.5rem;
     background-color: var(--secondary);
 
-    transition: all 0.8s cubic-bezier(0.87, 0, 0.13, 1);
+    transition: all 0.2s ease-in-out;
 }
 
 .testimonial .controls button:hover {
