@@ -413,7 +413,7 @@ p {
 .unique-rooms .card__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .unique-rooms .card {
@@ -663,7 +663,7 @@ p {
 .intro {
     background-color: white;
     padding-block-start: 7.8rem;
-    padding-block-end: 11.1rem;
+    padding-block-end: 5rem;
 }
 
 .intro-container {
@@ -680,13 +680,27 @@ p {
     max-width: 71.1rem;
 }
 
+.intro__text div {
+    height: 30rem;
+    display: flex;
+    align-items: center;
+}
+
 .intro__text a {
-    display: inline-block;
-    margin-block-start: 7.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    padding-inline: 6rem;
-    padding-block: 2rem;
+    width: 20rem;
+    height: 6rem;
     border: 1px solid var(--secondary-text);
+    border-radius: 50%;
+
+    transition: all .2s ease-in-out;
+}
+
+.intro__text a:hover {
+    height: 20rem;
 }
 
 .link__container {
