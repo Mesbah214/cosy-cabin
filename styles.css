@@ -163,6 +163,12 @@ h6 {
     color: var(--accent);
 }
 
+.main-nav-link:focus-visible {
+    outline: 3px dashed var(--accent);
+    outline-offset: 3px;
+}
+
+
 /******************
 * Hero Section
 ******************/
@@ -179,7 +185,6 @@ h6 {
     text-align: center;
     position: relative;
     z-index: 10;
-    /* display: none; */
 }
 
 .hero__text span {
@@ -243,7 +248,6 @@ picture {
     background-color: var(--accent);
     border-radius: 50%;
     border: 0;
-    outline: 1.2rem solid var(--button);
     position: absolute;
     top: 50%;
     right: 0;
@@ -251,7 +255,8 @@ picture {
 }
 
 .hero__button:focus-visible {
-    outline-color: dashed var(--accent);
+    outline: 4px dashed var(--accent);
+    outline-offset: 4px;
 }
 
 /******************
@@ -647,6 +652,11 @@ p {
     background-color: var(--accent);
 }
 
+.testimonial .controls button:focus-visible {
+    outline: 4px dashed black;
+    outline-offset: 3px;
+}
+
 .control {
     color: white;
     transition: color 0.8s cubic-bezier(0.87, 0, 0.13, 1);
@@ -703,6 +713,11 @@ p {
     height: 20rem;
 }
 
+.intro__text a:focus-visible {
+    outline: 4px dashed black;
+    outline-offset: 3px;
+}
+
 .link__container {
     display: flex;
 }
@@ -736,4 +751,9 @@ p {
 .link:hover svg {
     top: 80%;
     right: 20px;
+}
+
+.link:focus-visible {
+    outline: 5px dashed orange;
+    outline-offset: 3px;
 }
